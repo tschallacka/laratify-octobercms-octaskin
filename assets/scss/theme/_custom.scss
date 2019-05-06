@@ -1,0 +1,88 @@
+@import '_panel.scss';
+@import '../css/daftspunk-Font-Autumn/css/font-autumn.css';    
+@import '_legacy_font_autumn.scss';
+.text-left {
+    text-align: left;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.sub-title-divider {
+    border-top: 1px solid #ddd;
+    margin-top:30px;
+}
+
+.sub-title-divider h2 {
+    margin-top: 0.18rem;
+    font-size: 1.56rem;
+}
+
+.icon-circle-32 {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius:50%;
+    text-align: center;
+    color: color('black','base');
+}
+
+.post-tag {
+    display: inline-block;
+    background-color: color('orange','darken-2');
+    padding: 3px 7px 3px 7px;
+    float: left;
+    margin: 2px 2px 0px 0px; 
+    color: color('shades', 'white');
+    border-radius: 3px;
+    text-shadow: 1px 1px 0px color('grey','darken-2');
+}
+
+strong {
+    font-weight: 800;
+}
+
+.cv .tagslist {
+    display: inline-block;
+}
+
+.cv .percentile {
+    padding: 7px 0px 7px 0px;
+}
+
+.cv .percentile > strong {
+    display: inline-block;
+    min-width: 100px;
+}
+
+.percentile .post-tag {
+    margin-bottom: -8px;
+}
+
+section.cv article:not(:first-of-type) > header {
+    margin-top:50px;
+}
+
+.cv .cv-logo {
+    margin-top: 20px;
+}
+
+.cv .timeline-item-tags {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.cv .summary {
+    width: 100%;
+}
+
+.cv .summary ul li {
+    list-style-type: square;
+    margin-left: 40px;
+
+}

@@ -18,7 +18,9 @@ $(document).ready(function() {
   $(window).trigger('resize');
 
   // Parallax
-  $('.lt-parallax').parallax();
+  if($('.lt-parallax').length > 0) {
+    $('.lt-parallax').parallax();
+  }
 
   // Tabs
   $('.lt-tabs').tabs();
@@ -28,9 +30,11 @@ $(document).ready(function() {
 
   // Owl Carousel
   $('.owl-carousel').owlCarousel({
-      loop:true,
+      loop: true,
       items: 1,
-      center: true
+      autoplay: 5000,
+      center: true,
+      dots: false,
   })
 
   // Select
