@@ -2,8 +2,17 @@ title = "Contact"
 url = "/contact"
 layout = "octaskin"
 is_hidden = 0
-==
 
+[genericForm contactForm]
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+==
 <section id="lt-header" class="lt-section lt-section-fullwidth section">
   <div class="lt-container container">
     <div class="lt-content lt-header-content">
@@ -16,6 +25,7 @@ is_hidden = 0
   <div class="lt-container container">
     <div class="lt-content lt-mainpage-content">
       {% partial "pages-contact/mainpage" %}
+      {% component 'contactForm'%}
     </div>
   </div>
 </section>

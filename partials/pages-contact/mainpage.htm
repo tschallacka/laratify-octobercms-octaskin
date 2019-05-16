@@ -1,3 +1,12 @@
+[genericForm contactForm]
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
 ==
 <div class="lt-row row">
   <div class="lt-col col s12">
@@ -9,64 +18,3 @@
 </div>
 
 <div class="lt-vertical-spacer"></div>
-
-<form class="col s12">
-  <div class="lt-row row">
-    <div class="input-field lt-col col s6">
-      <input type="text" class="validate" id="first_name">
-      <label for="first_name" class="active">First Name</label>
-    </div>
-    <div class="input-field lt-col col s6">
-      <input type="text" id="last_name">
-      <label for="last_name">Last Name</label>
-    </div>
-  </div>
-  <div class="lt-row row">
-    <div class="input-field lt-col col s6">
-      <input type="text" class="validate" id="first_name">
-      <label for="company_name" class="active">Organization</label>
-    </div>
-    <div class="input-field lt-col col s6">
-      <input type="text" class="validate" id="first_name">
-      <label for="company_website" class="active">Website</label>
-    </div>
-  </div>
-  <div class="lt-row row">
-    <div class="input-field lt-col col s12">
-      <input type="email" class="validate" id="email">
-      <label data-success="right" data-error="wrong" for="email">Email</label>
-    </div>
-  </div>
-  <div class="lt-row row">
-    <div class="input-field lt-col col s12">
-      <textarea id="textarea1" class="materialize-textarea"></textarea>
-      <label for="textarea1">Message to Tschallacka</label>
-    </div>
-  </div>
-  <div class="lt-row row">
-    <div class="input-field lt-col col s12">
-      <select multiple>
-        <option value="" disabled selected>Select a reason</option>
-        <option value="1">Personal</option>
-        <option value="1">Support</option>
-        <option value="2">Recruiting</option>
-        <option value="3">Did you ever hear the tragedy of Darth Plagueis The Wise?</option>
-      </select>
-      <label>Reason for contacting</label>
-    </div>
-  </div>
-  <div class="lt-row row">
-    <div class="lt-col col s12">
-      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-      <label for="filled-in-box">Send copy to my email</label>
-    </div>
-  </div>
-
-  <div class="lt-vertical-spacer"></div>
-
-  <div class="lt-row row">
-    <div class="lt-col col s12">
-      <button class="btn-large waves-effect waves-light" type="submit" name="action">Submit <i class="material-icons right">send</i></button>
-    </div>
-  </div>
-</form>
