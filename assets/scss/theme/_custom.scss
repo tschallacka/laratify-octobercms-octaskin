@@ -26,12 +26,15 @@
 .icon-circle-32 {
     width: 32px;
     height: 32px;
+    display: block;
     line-height: 32px;
     border-radius:50%;
     text-align: center;
     color: color('black','base');
 }
-
+.icon-circle-32 .normal {
+    font-family: Raleway;
+}
 .post-tag {
     display: inline-block;
     background-color: color('orange','darken-2');
@@ -85,4 +88,16 @@ section.cv article:not(:first-of-type) > header {
     list-style-type: square;
     margin-left: 40px;
 
+}
+.cv .education-container h3,
+.cv .work-container h3 {
+    font-size: 1.41em;
+}
+.cv .education-container h4,
+.cv .work-container h4 {
+    font-size: 1.31em;
+}
+body > p.flash-message {
+    margin-top: 100px;
+    z-index:1000;
 }
